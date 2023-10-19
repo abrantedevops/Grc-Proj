@@ -9,17 +9,18 @@
 <hr>
 
 ## Sumário
-
-<a href="#introdução">Introdução</a><br>
-<a href="#topologia">Topologia Lógica</a><br>
-<a href="#rc">Roteamento e Comutação</a><br>
-<a href="#ident">Endereçamento e Nomenclatura</a><br>
-<a href="#automação">Automação da Rede</a><br>
-<a href="#especificações">Especificações do laboratório e Máquinas Virtuais</a><br>
-<a href="#testes">Testes Fundamentais</a><br>
-<a href="#outros">Outros Detalhes</a><br>
-<a href="#licença">Licença</a><br>
-<a href="#contato">Contato</a><br>
+<p align="center">
+  <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#topologia">Topologia Lógica</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rc">Roteamento e Comutação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#ident">Endereçamento e Nomenclatura</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#automação">Automação da Rede</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#especificações">Especificações do laboratório e Máquinas Virtuais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#testes">Testes Fundamentais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#outros">Outros Detalhes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contato">Contato</a><br>
+</p>
 
 <hr>
 
