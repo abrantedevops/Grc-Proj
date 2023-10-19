@@ -17,6 +17,7 @@
 - [Automação da Rede](#automação)
 - [Especificações do laboratório e Máquinas Virtuais](#especificações)
 - [Testes Fundamentais](#testes)
+- [Mais informações](#outros)
 - [Licença](#licença)
 - [Contato](#contato)
 
@@ -165,6 +166,9 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
     </div>
     </div>
 
+
+<h3 id="outros">Outros Detalhes</h3>
+https://www.youtube.com/watch?v=voO2sv4i2vE
 
 <h3 id="licença">Licença</h3>
 
