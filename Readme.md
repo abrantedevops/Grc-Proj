@@ -129,8 +129,8 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
     <p align="justify">Foram selecionados alguns testes envolvendo a conectividade para avaliar o configuração do roteamento fornecida pelo ISP, bem como o acesso à internet e a redundância da rede contratada pelo cliente em caso de falha de um dos links de R1. Os testes foram feitos a partir dos roteadores do provedor e também de alguns Hosts do cliente. Os momentos destacados abaixo retratam que os resultados obtidos foram os esperados, ou seja o roteamento das cidades foi disponibilizado pelo ISP e o acesso à internet foi mantido mesmo após a queda forçada do link principal de R1, que por sinal o teste foi feito de uma máquina da VLAN 10, cujo endereçamento foi fornecido pelo DHCP da rede do cliente.</p>
 
     <p align="center">
-        <img src="registry/t2.gif" alt="Gif 1" style="width: 450px; margin-right: 20px;"/>
-        <img src="registry/t1.gif" alt="Gif 2" style="width: 450px;"/>
+        <img src="registry/t2.gif" alt="Gif 1"/>
+        <img src="registry/t1.gif" alt="Gif 2"/>
     </p>
 
 
