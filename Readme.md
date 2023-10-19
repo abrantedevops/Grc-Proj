@@ -131,7 +131,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
     <div style="display: flex; justify-content: center; align-items: center">
         <div style="flex: 1; margin: 10px; text-align: center;">
-            <img src="registry/t2.gif" alt="Gif 1" width="435" />
+            <img src="registry/t2.gif" alt="Gif 1" width="135" />
             <p>Roteamento das cidades disponibilizado pelo ISP</p>
         </div>
         <div style="flex: 1; margin: 10px; text-align: center;">
