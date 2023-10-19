@@ -63,7 +63,6 @@
 
 <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/atmpython1.gif" alt="Automação com Python no RT_NTI"/>
-    <p>Automação com Python no RT_NTI.</p>
 </div>
 
 
@@ -73,7 +72,6 @@
 
 <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/pnetlogin.png" alt="PnetLab login"/>
-    <p>Login no PnetLab em http://192.168.0.21</p>
 </div>
 
 <p style="text-align: justify;">Após o login, foi criado um "novo arquivo" para representar a construção do projeto através da adição de todos os dispositivos mostrados na topologia lógica.</p>
@@ -117,7 +115,6 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
 <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/rccpnet.png" alt="PnetLab VM"/>
-    <p style="text-align: center;">Utilização dos Recursos da VM do PnetLab.</p>
 </div>
 
 <p style="text-align: justify;"><span style="color:red;">Obs.:</span> É importante salientar que apesar de ter definido recursos consideráveis para a VM do PnetLab, o laboratório do projeto pode ser executado com menos recursos, desde que não seja utilizado todos os servidores ao mesmo tempo. De qualquer forma, caso opte por alterar os recursos é indicado fazer testes de desempenho para verificar se a VM do PnetLab está conseguindo atender a demanda dos servidores e/ou dispositivos. Todas as máquinas virtuais, bem como o laboratório do projeto estão disponíveis no diretório setup.</p>
@@ -127,16 +124,14 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
  - <h4>Roteamento e Conectividade</h4>
 
-    <p style="text-align: justify;">Foram selecionados alguns testes envolvendo a conectividade para avaliar o configuração do roteamento fornecida pelo ISP, bem como o acesso à internet e a redundância da rede contratada pelo cliente em caso de falha de um dos links de R1. Os testes foram feitos a partir dos roteadores do provedor e também de alguns Hosts do cliente. Os momentos destacados abaixo retratam que os resultados obtidos foram os esperados.</p>
+    <p style="text-align: justify;">Foram selecionados alguns testes envolvendo a conectividade para avaliar o configuração do roteamento fornecida pelo ISP, bem como o acesso à internet e a redundância da rede contratada pelo cliente em caso de falha de um dos links de R1. Os testes foram feitos a partir dos roteadores do provedor e também de alguns Hosts do cliente. Os momentos destacados abaixo retratam que os resultados obtidos foram os esperados, ou seja o roteamento das cidades é disponibilizado pelo ISP Acesso à internet mantido mesmo após a queda forçada do link principal de R1. Teste feito em uma máquina da VLAN 10, cujo endereçamento foi fornecido pelo DHCP da rede do cliente.</p>
 
     <div style="display: flex; justify-content: center; align-items: center">
         <div style="flex: 1; margin: 10px; text-align: center;">
-            <img src="registry/t2.gif" alt="Gif 1" width="135" />
-            <p>Roteamento das cidades disponibilizado pelo ISP</p>
+            <img src="registry/t2.gif" alt="Gif 1"/>
         </div>
         <div style="flex: 1; margin: 10px; text-align: center;">
             <img src="registry/t1.gif" alt="Gif 2"/>
-            <p>Acesso à internet mantido mesmo após a queda forçada do link principal de R1. Teste feito em uma máquina da VLAN 10, cujo endereçamento foi fornecido pelo DHCP da rede do cliente.</p>
         </div>
     </div>
 
@@ -144,38 +139,31 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
     <p style="text-align: justify;">A maioria dos serviços configurados na DMZ foram provisionados a partir da utilização do docker-compose, cujo arquivo yml pode ser encontrados neste repositório no diretório setup. O restante dos serviços da DMZ, ou seja o TrueNAS e o ADDS foram configurados diretamente nas máquinas virtuais. Já na área do NTI, o firewall e o debianMGMT também são virtualizações QEMU. O preview destacado abaixo foi feito a partir da vm debianMGMT no NTI, sendo possível observar o funcionamento dos serviços disponibilizados na rede da escola após toda a configuração. </p>
 
-<div style="display: flex; justify-content: center; align-items: center">
+    <div style="display: flex; justify-content: center; align-items: center">
     <div style="flex: 1; margin: 10px; text-align: center;">
-    <img src="registry/zabbix.gif" alt="Gif 1"/>
-    <p style="text-align: center;">Monitoramento Zabbix.</p>
+        <img src="registry/zabbix.gif" alt="Gif 1"/>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
-    <img src="registry/grafana.gif" alt="Gif 2"/>
-    <p style="text-align: center;">Grafana.</p>
+        <img src="registry/grafana.gif" alt="Gif 2"/>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
-    <img src="registry/dvr.gif" alt="Gif 3" />
-    <p style="text-align: center;">iSpy.</p>
+        <img src="registry/dvr.gif" alt="Gif 3"/>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
-    <img src="registry/firewall.gif" alt="Gif 4" >
-    <p style="text-align: center;">FortiGate.</p>
+        <img src="registry/firewall.gif" alt="Gif 4"/>
     </div>
-</div>
-<div style="display: flex; justify-content: center; align-items: center 20px;">
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center 20px;">
     <div style="flex: 1; margin: 10px auto; text-align: center;">
-    <img src="registry/moodle.gif" alt="Gif 5" >
-    <p style="text-align: center;">Moodle.</p>
+        <img src="registry/moodle.gif" alt="Gif 5"/>
     </div>
     <div style="flex: 1; margin: 10px auto; text-align: center;">
-    <img src="registry/truenas.gif" alt="Gif 6" >
-    <p style="text-align: center;">TrueNAS.</p>
+        <img src="registry/truenas.gif" alt="Gif 6"/>
     </div>
     <div style="flex: 1; margin: 10px auto; text-align: center;">
-    <img src="registry/adds.gif" alt="Gif 7">
-    <p style="text-align: center;">Controlador de Domínio ADDS.</p>
+        <img src="registry/adds.gif" alt="Gif 7"/>
     </div>
-</div>
+    </div>
 
 
 <h3 id="licença">Licença</h3>
