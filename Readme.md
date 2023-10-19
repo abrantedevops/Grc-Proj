@@ -117,7 +117,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
 <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/rccpnet.png" alt="PnetLab VM"/>
-    <p>Utilização dos Recursos da VM do PnetLab.</p>
+    <p style="text-align: center;">Utilização dos Recursos da VM do PnetLab.</p>
 </div>
 
 <p style="text-align: justify;"><span style="color:red;">Obs.:</span> É importante salientar que apesar de ter definido recursos consideráveis para a VM do PnetLab, o laboratório do projeto pode ser executado com menos recursos, desde que não seja utilizado todos os servidores ao mesmo tempo. De qualquer forma, caso opte por alterar os recursos é indicado fazer testes de desempenho para verificar se a VM do PnetLab está conseguindo atender a demanda dos servidores e/ou dispositivos. Todas as máquinas virtuais, bem como o laboratório do projeto estão disponíveis no diretório setup.</p>
@@ -147,33 +147,33 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 <div style="display: flex; justify-content: center; align-items: center">
     <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/zabbix.gif" alt="Gif 1"/>
-    <p>Monitoramento Zabbix.</p>
+    <p style="text-align: center;">Monitoramento Zabbix.</p>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/grafana.gif" alt="Gif 2"/>
-    <p>Grafana.</p>
+    <p style="text-align: center;">Grafana.</p>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/dvr.gif" alt="Gif 3" />
-    <p>iSpy.</p>
+    <p style="text-align: center;">iSpy.</p>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
     <img src="registry/firewall.gif" alt="Gif 4" >
-    <p>FortiGate.</p>
+    <p style="text-align: center;">FortiGate.</p>
     </div>
 </div>
 <div style="display: flex; justify-content: center; align-items: center 20px;">
     <div style="flex: 1; margin: 10px auto; text-align: center;">
     <img src="registry/moodle.gif" alt="Gif 5" >
-    <p>Moodle.</p>
+    <p style="text-align: center;">Moodle.</p>
     </div>
     <div style="flex: 1; margin: 10px auto; text-align: center;">
     <img src="registry/truenas.gif" alt="Gif 6" >
-    <p>TrueNAS.</p>
+    <p style="text-align: center;">TrueNAS.</p>
     </div>
     <div style="flex: 1; margin: 10px auto; text-align: center;">
     <img src="registry/adds.gif" alt="Gif 7">
-    <p>Controlador de Domínio ADDS.</p>
+    <p style="text-align: center;">Controlador de Domínio ADDS.</p>
     </div>
 </div>
 
