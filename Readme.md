@@ -10,16 +10,16 @@
 
 ## Sumário
 
-- [Introdução](#introdução)
-- [Topologia Lógica](#topologia)
-- [Roteamento e Comutação](#rc)
-- [Endereçamento e Nomenclatura](#ident)
-- [Automação da Rede](#automação)
-- [Especificações do laboratório e Máquinas Virtuais](#especificações)
-- [Testes Fundamentais](#testes)
-- [Mais informações](#outros)
-- [Licença](#licença)
-- [Contato](#contato)
+<a href="#introdução">Introdução</a><br>
+<a href="#topologia">Topologia Lógica</a><br>
+<a href="#rc">Roteamento e Comutação</a><br>
+<a href="#ident">Endereçamento e Nomenclatura</a><br>
+<a href="#automação">Automação da Rede</a><br>
+<a href="#especificações">Especificações do laboratório e Máquinas Virtuais</a><br>
+<a href="#testes">Testes Fundamentais</a><br>
+<a href="#outros">Outros Detalhes</a><br>
+<a href="#licença">Licença</a><br>
+<a href="#contato">Contato</a><br>
 
 <hr>
 
