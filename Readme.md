@@ -129,7 +129,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
     <p style="text-align: justify;">Foram selecionados alguns testes envolvendo a conectividade para avaliar o configuração do roteamento fornecida pelo ISP, bem como o acesso à internet e a redundância da rede contratada pelo cliente em caso de falha de um dos links de R1. Os testes foram feitos a partir dos roteadores do provedor e também de alguns Hosts do cliente. Os momentos destacados abaixo retratam que os resultados obtidos foram os esperados.</p>
 
-    <div style="display: flex; justify-content: space-around;">
+    <div style="display: flex; justify-content: center; align-items: center">
         <div style="flex: 1; margin: 10px; text-align: center;">
             <img src="registry/t2.gif" alt="Gif 1" width="435" />
             <p>Roteamento das cidades disponibilizado pelo ISP</p>
@@ -144,7 +144,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
     <p style="text-align: justify;">A maioria dos serviços configurados na DMZ foram provisionados a partir da utilização do docker-compose, cujo arquivo yml pode ser encontrados neste repositório no diretório setup. O restante dos serviços da DMZ, ou seja o TrueNAS e o ADDS foram configurados diretamente nas máquinas virtuais. Já na área do NTI, o firewall e o debianMGMT também são virtualizações QEMU. O preview destacado abaixo foi feito a partir da vm debianMGMT no NTI, sendo possível observar o funcionamento dos serviços disponibilizados na rede da escola após toda a configuração. </p>
 
-    <div style="display: flex; justify-content: space-around;">
+    <div style="display: flex; justify-content: center; align-items: center">
         <div style="flex: 1; margin: 10px; text-align: center;">
             <img src="registry/zabbix.gif" alt="Gif 1" width="250" />
             <p>Monitoramento Zabbix.</p>
@@ -162,7 +162,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
             <p>FortiGate.</p>
         </div>
     </div>
-    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: center; align-items: center 20px;">
         <div style="flex: 1; margin: 10px auto; text-align: center;">
             <img src="registry/moodle.gif" alt="Gif 5" width="250"/>
             <p>Moodle.</p>
@@ -193,9 +193,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <h3 id="contato">Contato</h3>
 
 <a href="mailto:thiago.abrante@academico.ifpb.edu.br" target="_blank">Thiago Abrante</a>
-
-
-
-
-
-
