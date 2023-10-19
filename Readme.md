@@ -10,15 +10,15 @@
 
 ## Sumário
 <p align="center">
-  <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#topologia">Topologia Lógica</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rc">Roteamento e Comutação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#ident">Endereçamento e Nomenclatura</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#automação">Automação da Rede</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#especificações">Especificações do laboratório e Máquinas Virtuais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#testes">Testes Fundamentais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#outros">Outros Detalhes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#introdução">Introdução</a><br>
+  <a href="#topologia-lógica">Topologia Lógica</a><br>
+  <a href="#roteamento-e-comutação">Roteamento e Comutação</a><br>
+  <a href="#endereçamento-e-nomenclatura">Endereçamento e Nomenclatura</a><br>
+  <a href="#automação">Automação da Rede</a><br>
+  <a href="#especificações-do-laboratório-e-váquinas-virtuais">Especificações do laboratório e Máquinas Virtuais</a><br>
+  <a href="#testes-fundamentais">Testes Fundamentais</a><br>
+  <a href="#mais-informações">Mais informações</a><br>
+  <a href="#licença">Licença</a><br>
   <a href="#contato">Contato</a><br>
 </p>
 
@@ -28,7 +28,7 @@
 
 <p style="text-align: justify;">No cenário dinâmico das redes de computadores, a criação de uma topologia lógica para um provedor de rede operando em três cidades requer uma abordagem meticulosa. Desde as redes locais (LANs) até as redes de longa distância (WANs), os provedores são essenciais para a conectividade digital. Por isso, a topologia lógica apresentada não só envolveu a implementação cuidadosa de switches, roteadores e servidores que atendessem aos requisitos do projeto, como também foi empregado um pouco de automação nas configurações dos dispositivos, especialmente nos roteadores. Todo o projeto foi desenvolvido mediante o uso de máquinas virtuais, com o auxílio do PnetLab, virtualização e emulação QEMU.</p>
 
-<h3 id="topologia">Topologia Lógica</h3>
+<h3 id="topologia-lógica">Topologia Lógica</h3>
 
 <p style="text-align: justify;">A Topologia Lógica para o projeto está representada na figura abaixo. Os dispositivos R1, R2 e R3 retratam os roteadores responsáveis por fornecer internet às cidades, que neste caso para R2 e R3 estão representadas por interfaces de Loopback, sendo 2.2.2.2 para R2 e 3.3.3.3 para R3. Já em R1, particularmente na interface e0/0 foi provisionado uma infraestrutura típica de um cliente que contratou os serviços do provedor. Esse cliente foi definido como sendo uma escola pequena, composta pelos setores de recepção/secretaria, corredor, laboratóri de informática (LI), Sala dos professores (SP), Coordenação Pedagógica (CP) e diretoria. Nisso, foram configuradores o fornecimento de alguns serviços, tais como um servidor de arquivos, plataforma de ensino, serviço de Monitoramento, controlador de Domínio, armazenamento DVR, entre outros. Para toda a conexão da escola com a internet, foi configurado um firewall FortiGate, implementado neste caso para monitorar a sessão de rede dos dispositivos locais, bem como o NAT do cliente. Por fim, todo o tráfego de dados para a internet das cidade é feito por R2 (roteador de borda).</p>
 
@@ -36,7 +36,7 @@
     <img src="registry/alllab.png" alt="topologia"/>
 </div>
 
-<h3 id="rc">Roteamento e Comutação</h3>
+<h3 id="roteamento-e-comutação">Roteamento e Comutação</h3>
 
 <p style="text-align: justify;">O roteamento realizado no provedor (ISP) consistiu em configurar o protocolo OSPF entre os roteadores R1, R2 e R3 para que suas respectivas redes pudessem se tornar conhecidas. No R2 foram configurados a saída para a internet e o NAT por meio da interface e0/2, por isso, em R3 e R1 o tráfego foi direcionado para R2 mediante rotas default. A rede da cidade representada pela Loopback 3.3.3.3 sai para a internet através da interface e0/0 de R3, já a cidade representada pela Loopback 2.2.2.2 sai para a internet na interface e0/2 de R2. Para a cidade atendida por R1 existe um diferencial, que é a redundância de ter duas alternativas de acesso à WAN, que pode ser tanto pela interface e0/1, quanto pela interface e0/2, por padrão a saída para a internet é feita pela interface e0/1, e caso este link fique indisponível o tráfego é direcionado para a interface e0/2. Nesse contexto supondo então que na cidade delimitada pela área de alcance de R1 exista uma escola que deseja criar uma rede local para o seu ambiente visando uma infraestrutura que possua como requisitos técnicos disponibilidade, desempenho e segurança de rede para os seus usuários. Com isso a escola contratou os serviços do provedor, ao qual foi provisionada uma DMZ com os seguintes serviços:</p>
 
@@ -51,7 +51,7 @@
 
 <p style="text-align: justify;"><span style="color:red;">Obs.:</span> Em termos didáticos para que o acesso à internet do provedor no laboratório fosse possível, a interface e0/2 (WAN) do R2 foi configurada com o endereço da minha rede local 192.168.0.0/24.</p>
 
-<h3 id="ident">Endereçamento e Nomenclatura</h3>
+<h3 id="endereçamento-e-nomenclatura">Endereçamento e Nomenclatura</h3>
 
 <p style="text-align: justify;">Para a identificação dos dispositivos da rede em termos de endereçamento IP e nomenclatura dos dispositivo, foi utilizado o seguinte padrão:</p>
 
@@ -68,7 +68,7 @@
 </div>
 
 
-<h3 id="especificações">Especificações do laboratório e Máquinas Virtuais</h3>
+<h3 id="especificações-do-laboratório-e-máquinas-virtuais">Especificações do laboratório e Máquinas Virtuais</h3>
 
 <p style="text-align: justify;">Inicialmente foi realizado o donwload do PnetLab seguindo a documentação disponibilizada na página oficial. Em seguida, com o auxílio do virtualbox foi iniciado a VM do Pnetlab ao qual após o processo de instalação e pelo fato da conexão estar em modo bridge, foi possível acessar a interface web do PnetLab pelo navegador no endereço disponibilizado pelo servidor DHCP da minha rede http://192.168.0.0/24.</p>
 
@@ -122,7 +122,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 <p style="text-align: justify;"><span style="color:red;">Obs.:</span> É importante salientar que apesar de ter definido recursos consideráveis para a VM do PnetLab, o laboratório do projeto pode ser executado com menos recursos, desde que não seja utilizado todos os servidores ao mesmo tempo. De qualquer forma, caso opte por alterar os recursos é indicado fazer testes de desempenho para verificar se a VM do PnetLab está conseguindo atender a demanda dos servidores e/ou dispositivos. Todas as máquinas virtuais, bem como o laboratório do projeto estão disponíveis no diretório setup.</p>
 
 
-<h3 id="testes">Testes Fundamentais</h3>
+<h3 id="testes-fundamentais">Testes Fundamentais</h3>
 
  - <h4>Roteamento e Conectividade</h4>
 
@@ -168,7 +168,7 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
     </div>
 
 
-<h3 id="outros">Outros Detalhes</h3>
+<h3 id="mais-informações">Mais informações</h3>
 https://www.youtube.com/watch?v=voO2sv4i2vE
 
 <h3 id="licença">Licença</h3>
