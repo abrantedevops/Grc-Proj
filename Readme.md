@@ -14,8 +14,8 @@
   <a href="#topologia-lógica">Topologia Lógica</a><br>
   <a href="#roteamento-e-comutação">Roteamento e Comutação</a><br>
   <a href="#endereçamento-e-nomenclatura">Endereçamento e Nomenclatura</a><br>
-  <a href="#automação">Automação da Rede</a><br>
-  <a href="#especificações-do-laboratório-e-váquinas-virtuais">Especificações do laboratório e Máquinas Virtuais</a><br>
+  <a href="#automação-da-rede">Automação da Rede</a><br>
+  <a href="#especificações-do-laboratório-e-máquinas-virtuais">Especificações do laboratório e Máquinas Virtuais</a><br>
   <a href="#testes-fundamentais">Testes Fundamentais</a><br>
   <a href="#mais-informações">Mais informações</a><br>
   <a href="#licença">Licença</a><br>
