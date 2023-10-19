@@ -146,34 +146,34 @@ O firewall FortiGate foi configurado a partir de uma imagem qcow2 disponibilizad
 
     <div style="display: flex; justify-content: center; align-items: center">
     <div style="flex: 1; margin: 10px; text-align: center;">
-    <img src="registry/zabbix.gif" alt="Gif 1" width="95%" />
+    <img src="registry/zabbix.gif" alt="Gif 1" width="35%" />
     <p>Monitoramento Zabbix.</p>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
-    <img src="registry/grafana.gif" alt="Gif 2" width="95%"/>
+    <img src="registry/grafana.gif" alt="Gif 2" width="35%"/>
     <p>Grafana.</p>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
-        <img src="registry/dvr.gif" alt="Gif 3" width="250"/>
-        <p>iSpy.</p>
+    <img src="registry/dvr.gif" alt="Gif 3"  width="35%"/>
+    <p>iSpy.</p>
     </div>
     <div style="flex: 1; margin: 10px; text-align: center;">
-        <img src="registry/firewall.gif" alt="Gif 4" width="250"/>
-        <p>FortiGate.</p>
+    <img src="registry/firewall.gif" alt="Gif 4"  width="35%"/>
+    <p>FortiGate.</p>
     </div>
     </div>
     <div style="display: flex; justify-content: center; align-items: center 20px;">
     <div style="flex: 1; margin: 10px auto; text-align: center;">
-        <img src="registry/moodle.gif" alt="Gif 5" width="250"/>
-        <p>Moodle.</p>
+    <img src="registry/moodle.gif" alt="Gif 5"  width="35%"/>
+    <p>Moodle.</p>
     </div>
     <div style="flex: 1; margin: 10px auto; text-align: center;">
-        <img src="registry/truenas.gif" alt="Gif 6" width="250"/>
-        <p>TrueNAS.</p>
+    <img src="registry/truenas.gif" alt="Gif 6"  width="35%"/>
+    <p>TrueNAS.</p>
     </div>
     <div style="flex: 1; margin: 10px auto; text-align: center;">
-        <img src="registry/adds.gif" alt="Gif 7" width="250"/>
-        <p>Controlador de Domínio ADDS.</p>
+    <img src="registry/adds.gif" alt="Gif 7"  width="35%"/>
+    <p>Controlador de Domínio ADDS.</p>
     </div>
     </div>
 
