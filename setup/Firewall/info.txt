@@ -1,0 +1,7 @@
+[ABRA NA VM-DebianMGMT]
+link imagem download: https://drive.google.com/drive/folders/1sGIPkvWOIJ_J29PGb_B10fFAo1JsMcFY
+
+[IP] >> FORTIGATE
+http://10.0.0.1
+username: admin
+password: <blank>

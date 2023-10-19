@@ -1,0 +1,94 @@
+version: '3.9'
+services:
+#Parte 1 - Zabbix
+  zabbix-server:
+    container_name: zabbix-server
+    image: zabbix/zabbix-server-mysql:ubuntu-trunk
+    restart: always
+    pull_policy: always
+    environment:
+      - DB_SERVER_HOST=zabbix-mariadb
+      - MYSQL_USER=zabbix
+      - MYSQL_PASSWORD=zabbix
+      - MYSQL_ROOT_PASSWORD=zabbix
+    volumes:
+      - /srv/volumes/zabbix-server-module:/var/lib/zabbix/modules
+    networks:
+      zabbix-rede:
+        ipv4_address: 10.200.0.7
+
+  zabbix-frontend:
+    container_name: zabbix-frontend
+    image: zabbix/zabbix-web-apache-mysql:ubuntu-trunk
+    restart: always
+    pull_policy: always
+    environment:
+      - DB_SERVER_HOST=zabbix-mariadb
+      - MYSQL_USER=zabbix
+      - MYSQL_PASSWORD=zabbix
+      - ZBX_SERVER_HOST=10.200.0.7
+      - PHP_TZ=America/Sao_Paulo
+    networks:
+      zabbix-rede:
+        ipv4_address: 10.200.0.8
+    ports:
+      - 8080:8080
+      - 443:8443
+    volumes:
+      - /srv/volumes/zabbix-frontend/ssl.key:/etc/ssl/apache2/ssl.key
+      - /srv/volumes/zabbix-frontend/ssl.crt:/etc/ssl/apache2/ssl.crt
+
+  zabbix-mariadb:
+    container_name: zabbix-mariadb
+    image: mariadb:10.5
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=zabbix
+      - MYSQL_USER=zabbix
+      - MYSQL_PASSWORD=zabbix
+      - MYSQL_DATABASE=zabbix
+    volumes:
+      - /srv/volumes/zabbix-mariadb:/var/lib/mysql
+    networks:
+      zabbix-rede:
+        ipv4_address: 10.200.0.10
+    ports:
+      - 3306:3306
+
+  zabbix-agent:
+    container_name: zabbix-agent
+    image: zabbix/zabbix-agent2:ubuntu-trunk
+    restart: always
+    pull_policy: always
+    environment:
+      - ZBX_HOSTNAME=zabbix-server
+      - ZBX_SERVER_HOST=10.200.0.7
+      - ZBX_SERVER_PORT=10051
+    networks:
+      zabbix-rede:
+        ipv4_address: 10.200.0.11
+    ports:
+      - 10050:10050
+
+#Parte 2 - Grafana
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    restart: always
+    pull_policy: always
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=grafana
+      - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app
+    networks:
+      zabbix-rede:
+        ipv4_address: 10.200.0.12
+    ports:
+      - 3000:3000
+
+networks:
+  zabbix-rede:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.200.0.0/24
+          gateway: 10.200.0.1

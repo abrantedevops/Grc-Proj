@@ -1,0 +1,13 @@
+[SRV_M6]
+VM link download: https://drive.google.com/drive/folders/1sGIPkvWOIJ_J29PGb_B10fFAo1JsMcFY
+Obs.:Verifique se o servidor DNS está configurado para o Google DNS, caso contrário altere o arquivo /etc/resolv.conf
+
+[LOGIN DO SERVIDOR]
+Username: admin
+Password: 1234
+
+[TESTES NA VM-DebianMGMT]
+[IP_VM_M6:8080] >> Plataforma Moodle
+http://172.16.6.4:8080
+username: user
+password: bitnami

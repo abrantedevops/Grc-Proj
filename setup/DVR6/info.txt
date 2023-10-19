@@ -1,0 +1,10 @@
+[SRV_DVR6]
+VM link download: https://drive.google.com/drive/folders/1sGIPkvWOIJ_J29PGb_B10fFAo1JsMcFY
+
+[LOGIN DO SERVIDOR]
+Username: admin
+Password: 1234
+
+[TESTES NA VM-DebianMGMT]
+[IP_VM_DVR6:8090] >> DVR
+http://172.16.6.6:8090

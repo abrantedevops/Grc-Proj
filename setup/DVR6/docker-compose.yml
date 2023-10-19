@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  ispyagentdvr:
+    image: doitandbedone/ispyagentdvr:latest
+    ports:
+      - '8090:8090'
+      - '3478:3478/udp'
+      - '50000-50010:50000-50010/udp'
+    volumes:
+      - /appdata/ispyagentdvr/config/:/agent/Media/XML/
+      - /appdata/ispyagentdvr/media/:/agent/Media/WebServerRoot/Media/
+      - /appdata/ispyagentdvr/commands:/agent/Commands/
+    tty: true
+    stdin_open: true
+    restart: always
+    container_name: ispyagentdvr
+    

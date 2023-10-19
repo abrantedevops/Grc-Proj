@@ -1,0 +1,13 @@
+link download das imagens IOL: https://drive.google.com/drive/folders/1sGIPkvWOIJ_J29PGb_B10fFAo1JsMcFY
+
+Requisitos para a automação dos roteadores:
+1 - Verifique se o ssh está habilitado;
+2 - Verifique se existe senha para entrar no modo Enable do Roteador;
+3 - Verifique se existe comunicação entre a vm DebianMGMT e os roteadores;
+
+[Account SSH Router]
+username: thiago
+password: thiago
+
+[Password Enable Mode Router]
+password: thiago
